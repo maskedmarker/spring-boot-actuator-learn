@@ -34,3 +34,12 @@ logging:
     druid.sql.Statement: INFO
     org.springframework.web.filter.CommonsRequestLoggingFilter: DEBUG
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+
